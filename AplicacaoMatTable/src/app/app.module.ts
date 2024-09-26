@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router'; // Importa RouterModule 
 
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 // Define as rotas
 const appRoutes: Routes = [
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

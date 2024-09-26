@@ -1,20 +1,18 @@
+mat-card {
+  margin-top: 80px; /* Ajusta conforme a altura da navbar */
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  width: 50%; /* Ajusta a largura da barra de pesquisa */
+  margin-bottom: 20px; /* Dá espaço entre a barra de pesquisa e a tabela */
+}
+
 table {
-    width: 100%;
-    margin-top: 16px;
-  }
-  
-  .mat-form-field {
-    width: 100%;
-    margin-bottom: 16px;
-  }
-  
-  .mat-card {
-    padding: 16px;
-    border-radius: 8px;
-  }
-  
-  .mat-elevation-z8 {
-    margin: 20px;
-    border-radius: 10px;
-  }
-  
+  width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+mat-paginator {
+  margin-top: 5px; /* Dá um pouco de espaço entre a tabela e o paginador */
+}

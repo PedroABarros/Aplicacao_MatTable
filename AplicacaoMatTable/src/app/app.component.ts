@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { TableComponent } from './table/table.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AplicacaoMatTable';
+  @ViewChild(TableComponent) tableComponent!: TableComponent;
+
+  onProdutoAdicionado(descricao: string) {
+    this.tableComponent.adicionarProduto(descricao); // Chama a função com a descrição
+  }
 }

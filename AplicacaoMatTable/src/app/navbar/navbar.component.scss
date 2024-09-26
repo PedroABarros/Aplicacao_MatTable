@@ -1,0 +1,31 @@
+mat-toolbar {
+    background-color: #1C444C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botao {
+    margin-right: 16px; // Adiciona espaçamento à direita
+    max-width: 200px; // Define uma largura máxima para o botão
+  }
+  
+  button {
+    width: auto; // Para que o botão não ocupe todo o espaço
+    padding: 8px 16px; // Adiciona um pouco de padding para melhorar o layout do botão
+    background-color: #3f51b5; // Define a cor do botão
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2c3e91; // Cor de fundo do botão ao passar o mouse
+  }
+  
