@@ -9,16 +9,16 @@ export interface Item {
 }
 
 const DADOS_ESTATICOS: Item[] = [
-  { codigo: '001', descricao: 'Produto A' },
-  { codigo: '002', descricao: 'Produto B' },
-  { codigo: '003', descricao: 'Produto C' },
-  { codigo: '004', descricao: 'Produto D' },
-  { codigo: '005', descricao: 'Produto E' },
-  { codigo: '006', descricao: 'Produto F' },
-  { codigo: '007', descricao: 'Produto G' },
-  { codigo: '008', descricao: 'Produto H' },
-  { codigo: '009', descricao: 'Produto I' },
-  { codigo: '010', descricao: 'Produto J' }
+  { codigo: '001', descricao: 'Arroz 1kg' },
+  { codigo: '002', descricao: 'Feijão 1kg' },
+  { codigo: '003', descricao: 'Açúcar 1kg' },
+  { codigo: '004', descricao: 'Sal 1kg' },
+  { codigo: '005', descricao: 'Óleo de soja 900ml' },
+  { codigo: '006', descricao: 'Macarrão 500g' },
+  { codigo: '007', descricao: 'Molho de tomate 340g' },
+  { codigo: '008', descricao: 'Leite 1L' },
+  { codigo: '009', descricao: 'Queijo Mussarela 200g' },
+  { codigo: '010', descricao: 'Pão Francês' }
 ];
 
 @Component({
@@ -48,14 +48,12 @@ export class TableComponent implements OnInit {
   }
 
   adicionarProduto(descricao: string) {
-    
     const ultimoCodigo = this.fonteDeDados.data.length > 0 ? 
       Math.max(...this.fonteDeDados.data.map(item => parseInt(item.codigo))) : 0;
     const novoCodigo = (ultimoCodigo + 1).toString().padStart(3, '0');
-  
-    
+
+    // Cria o novo produto
     const novoProduto: Item = { codigo: novoCodigo, descricao: descricao };
     this.fonteDeDados.data = [...this.fonteDeDados.data, novoProduto];
   }
-  
 }
