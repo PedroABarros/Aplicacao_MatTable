@@ -1,0 +1,19 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css'; // Remova o ~ para evitar problemas
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.mat-elevation-z8 {
+  border-radius: 8px;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto; // Usado para empurrar o botão para a direita
+}

@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-toolbar {
+    background-color: #1C444C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .router-outlet-container {
+    padding-top: 64px; /* Ajustar o conteúdo para não ficar atrás da toolbar */
+  }
+  
