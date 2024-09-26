@@ -7,13 +7,11 @@
       </mat-form-field>
   
       <table mat-table [dataSource]="fonteDeDados" matSort>
-        <!-- Código da coluna -->
         <ng-container matColumnDef="codigo">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Código</th>
           <td mat-cell *matCellDef="let item">{{ item.codigo }}</td>
         </ng-container>
   
-        <!-- Descrição da coluna -->
         <ng-container matColumnDef="descricao">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Descrição</th>
           <td mat-cell *matCellDef="let item">{{ item.descricao }}</td>

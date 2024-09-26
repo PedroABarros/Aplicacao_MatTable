@@ -10,6 +10,6 @@ export class AppComponent {
   @ViewChild(TableComponent) tableComponent!: TableComponent;
 
   onProdutoAdicionado(descricao: string) {
-    this.tableComponent.adicionarProduto(descricao); // Chama a função com a descrição
+    this.tableComponent.adicionarProduto(descricao); 
   }
 }

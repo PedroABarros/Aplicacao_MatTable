@@ -9,7 +9,7 @@ export class NavbarComponent {
   @Output() produtoAdicionado = new EventEmitter<string>();
 
   adicionarProduto() {
-    const descricao = prompt("Digite a descrição do produto:") || ''; // Solicita descrição do produto
-    this.produtoAdicionado.emit(descricao); // Emite o evento com a descrição
+    const descricao = prompt("Digite a descrição do produto:") || ''; 
+    this.produtoAdicionado.emit(descricao); 
   }
 }

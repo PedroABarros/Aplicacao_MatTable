@@ -6,18 +6,18 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatToolbarModule } from '@angular/material/toolbar'; // Módulo para MatToolbar
-import { MatCardModule } from '@angular/material/card'; // Módulo para MatCard
-import { RouterModule, Routes } from '@angular/router'; // Importa RouterModule para o roteamento
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatCardModule } from '@angular/material/card'; 
+import { RouterModule, Routes } from '@angular/router'; 
 
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-// Define as rotas
+
 const appRoutes: Routes = [
-  { path: '', component: TableComponent }, // Rota padrão
-  { path: '**', redirectTo: '', pathMatch: 'full' } // Rota coringa para redirecionar a rota desconhecida para a página principal
+  { path: '', component: TableComponent }, 
+  { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];
 
 @NgModule({
@@ -34,9 +34,9 @@ const appRoutes: Routes = [
     MatSortModule,
     MatInputModule,
     MatFormFieldModule,
-    MatToolbarModule, // Módulo para MatToolbar
-    MatCardModule, // Módulo para MatCard
-    RouterModule.forRoot(appRoutes) // Adiciona RouterModule com as rotas
+    MatToolbarModule, 
+    MatCardModule, 
+    RouterModule.forRoot(appRoutes) 
   ],
   providers: [],
   bootstrap: [AppComponent]

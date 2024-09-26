@@ -1,18 +1,18 @@
 mat-card {
-  margin-top: 80px; /* Ajusta conforme a altura da navbar */
+  margin-top: 80px; 
   display: flex;
   flex-direction: column;
 }
 
 mat-form-field {
-  width: 50%; /* Ajusta a largura da barra de pesquisa */
-  margin-bottom: 20px; /* Dá espaço entre a barra de pesquisa e a tabela */
+  width: 50%; 
+  margin-bottom: 20px; 
 }
 
 table {
-  width: 100%; /* Ocupa 100% da largura disponível */
+  width: 100%; 
 }
 
 mat-paginator {
-  margin-top: 5px; /* Dá um pouco de espaço entre a tabela e o paginador */
+  margin-top: 5px; 
 }

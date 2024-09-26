@@ -2,21 +2,21 @@
     flex: 1 1 auto;
   }
   
-/* Estilizar a barra de navegação */
+
 mat-toolbar {
-  background-color: #1C444C; /* Cor escura conforme solicitado */
+  background-color: #1C444C; 
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
-/* Estilizar o conteúdo para não ficar embaixo da navbar */
+
 .content {
-  margin-top: 64px; /* Adicione espaçamento equivalente à altura da navbar */
+  margin-top: 64px; 
 }
 
-/* Estilizar a barrinha de pesquisa */
+
 mat-form-field {
   width: 100%;
   margin-top: 20px;

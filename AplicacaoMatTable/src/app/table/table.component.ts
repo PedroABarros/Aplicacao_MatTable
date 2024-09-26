@@ -48,12 +48,12 @@ export class TableComponent implements OnInit {
   }
 
   adicionarProduto(descricao: string) {
-    // Incrementa o código automaticamente com base no maior código atual
+    
     const ultimoCodigo = this.fonteDeDados.data.length > 0 ? 
       Math.max(...this.fonteDeDados.data.map(item => parseInt(item.codigo))) : 0;
     const novoCodigo = (ultimoCodigo + 1).toString().padStart(3, '0');
   
-    // Adiciona o novo produto com o código gerado e a descrição passada
+    
     const novoProduto: Item = { codigo: novoCodigo, descricao: descricao };
     this.fonteDeDados.data = [...this.fonteDeDados.data, novoProduto];
   }

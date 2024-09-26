@@ -10,14 +10,14 @@ mat-toolbar {
   }
   
   .botao {
-    margin-right: 16px; // Adiciona espaçamento à direita
-    max-width: 200px; // Define uma largura máxima para o botão
+    margin-right: 16px; 
+    max-width: 200px; 
   }
   
   button {
-    width: auto; // Para que o botão não ocupe todo o espaço
-    padding: 8px 16px; // Adiciona um pouco de padding para melhorar o layout do botão
-    background-color: #3f51b5; // Define a cor do botão
+    width: auto; 
+    padding: 8px 16px; 
+    background-color: #3f51b5; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -26,6 +26,6 @@ mat-toolbar {
   }
   
   button:hover {
-    background-color: #2c3e91; // Cor de fundo do botão ao passar o mouse
+    background-color: #2c3e91; 
   }
   
