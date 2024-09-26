@@ -6,10 +6,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  @Output() produtoAdicionado = new EventEmitter<string>();
+  @Output() produtoAdicionado = new EventEmitter<void>();
 
   adicionarProduto() {
-    const descricao = prompt("Digite a descrição do produto:") || ''; 
-    this.produtoAdicionado.emit(descricao); 
+    this.produtoAdicionado.emit(); // Emite o evento para adicionar produto
   }
 }

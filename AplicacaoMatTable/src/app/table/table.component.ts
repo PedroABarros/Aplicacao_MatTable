@@ -43,17 +43,21 @@ export class TableComponent implements OnInit {
     this.fonteDeDados.filter = valorFiltro.trim().toLowerCase();
 
     if (this.fonteDeDados.paginator) {
-      this.fonteDeDados.paginator.firstPage();
+      this.fonteDeDados.paginator.firstPage(); // Volta para a primeira página após aplicar o filtro
     }
   }
 
-  adicionarProduto(descricao: string) {
-    const ultimoCodigo = this.fonteDeDados.data.length > 0 ? 
-      Math.max(...this.fonteDeDados.data.map(item => parseInt(item.codigo))) : 0;
-    const novoCodigo = (ultimoCodigo + 1).toString().padStart(3, '0');
-
-    // Cria o novo produto
-    const novoProduto: Item = { codigo: novoCodigo, descricao: descricao };
-    this.fonteDeDados.data = [...this.fonteDeDados.data, novoProduto];
+  adicionarProduto() {
+    const descricao = prompt('Digite a descrição do produto:'); // Pergunta ao usuário pela descrição
+    if (descricao) { // Adiciona somente se uma descrição for fornecida
+      const ultimoCodigo = this.fonteDeDados.data.length > 0 ? 
+        Math.max(...this.fonteDeDados.data.map(item => parseInt(item.codigo))) : 0;
+      const novoCodigo = (ultimoCodigo + 1).toString().padStart(3, '0');
+  
+      const novoProduto: Item = { codigo: novoCodigo, descricao: descricao };
+      this.fonteDeDados.data = [...this.fonteDeDados.data, novoProduto];
+    }
   }
+  
+  
 }

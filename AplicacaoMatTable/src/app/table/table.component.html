@@ -6,6 +6,9 @@
       <input matInput (keyup)="aplicarFiltro($event)" placeholder="Pesquisar produtos">
     </mat-form-field>
 
+    <button mat-raised-button class="adicionar-produto-btn" (click)="adicionarProduto()">Adicionar Produto</button>
+
+
     <table mat-table [dataSource]="fonteDeDados" matSort>
       <ng-container matColumnDef="codigo">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Código</th>
@@ -21,6 +24,6 @@
       <tr mat-row *matRowDef="let row; columns: colunasExibidas;"></tr>
     </table>
 
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" labelItemsPerPage="Itens por página"></mat-paginator>
   </mat-card-content>
 </mat-card>

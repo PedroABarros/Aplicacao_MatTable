@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
 const appRoutes: Routes = [
   { path: '', component: TableComponent }, 
   { path: '**', redirectTo: '', pathMatch: 'full' } 
@@ -38,7 +37,6 @@ const appRoutes: Routes = [
     MatCardModule, 
     RouterModule.forRoot(appRoutes) 
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

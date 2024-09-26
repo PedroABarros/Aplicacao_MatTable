@@ -7,9 +7,10 @@ import { TableComponent } from './table/table.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild(TableComponent) tableComponent!: TableComponent;
+  @ViewChild(TableComponent) tableComponent!: TableComponent; // Referência ao componente da tabela
 
-  onProdutoAdicionado(descricao: string) {
-    this.tableComponent.adicionarProduto(descricao); 
+  // Método que será chamado quando um produto for adicionado
+  onProdutoAdicionado() {
+    this.tableComponent.adicionarProduto(); // Chama a função para adicionar produto
   }
 }
