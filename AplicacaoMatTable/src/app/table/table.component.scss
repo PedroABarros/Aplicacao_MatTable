@@ -18,29 +18,26 @@ mat-paginator {
 }
 
 mat-card-title {
-  font-size: 24px; // Tamanho da fonte
-  font-weight: bold; // Negrito
+  font-size: 24px; 
+  font-weight: bold; 
   color: #1C444C;
   padding: 20px;
   }
 
-  // Definindo a cor de fundo da navbar (caso ainda não tenha)
+  
 :host {
-  background-color: #1C444C; // Exemplo da cor da navbar, ajuste conforme necessário
+  background-color: #1C444C; 
 }
 
 .adicionar-produto-btn {
-  background-color: #1C444C; // Mesma cor da navbar
-  color: white; // Cor do texto do botão
-  margin-left: 16px; // Adiciona espaço à esquerda do botão
-  border-radius: 4px; // Bordas arredondadas
-  padding: 8px 16px; // Espacos interno
-
-  // Transição suave ao passar o mouse
-  transition: background-color 0.3s;
+  background-color: #1C444C; 
+  color: white; 
+  margin-left: 16px; 
+  border-radius: 4px; 
+  padding: 8px 16px; 
 
   &:hover {
-    background-color: darken(#1C444C, 10%); // Escurece a cor ao passar o mouse
+    background-color: darken(#1C444C, 10%); 
   }
 }
 
